@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Резюме</title>
+  </head>
+  <body>
+    <form class="form">
+      <div class="form__header">
+        <h1>Резюме</h1> <hr />
+      </div>
+      <div class="form__body">
+      <div class="form__colum">
+        <div class="form__group">
+          <label for="FCs">Фамилия Имя</label><br />
+          <input type="text" name="firstname" id="firstname" placeholder="Пупкин Василий" class="form__control"/>
+        </div>
+        <div class="form__group">
+          <label for="Happy">Дата рождения</label><br />
+          <input type="date" name="Happy" id="Happy" class="form__control"/>
+        </div>
+        <div class="form__group">
+          <label for="Photography">Ваша фотография в формате 3:4</label><br />
+          <input type="file" accept="image/jpeg,image/png" name="Photo" id="Photo" class="form__control"/>
+        </div>
+      </div>
+
+      <div class="form__colum">
+        <div class="form__group">
+          <label for="Number_of_people">E-mail:</label><br />
+          <input type="email" name="Email_Rabotnika" id="Email_Rabotnika" class="form__control"/>
+        </div>
+        <div class="form__group">
+          <label for="Additional_services">Отметьте галочкой то, что охарактеризовывает вас:</label><br />
+
+          <p><input type="checkbox" name="Opros" id="Opros" value="Obrazovanie" >Я имею одно/несколько высших образований<Br>
+            <input type="checkbox" name="Opros" id="Opros" value="Opit">Я имею опыт работы в данной сфере <Br>
+            <input type="checkbox" name="Opros" id="Opros" value="Team">Я легко работаю в команде</Br>
+            <input type="checkbox" name="Opros" id="Opros" value="Adekvatnost">Я вполне ответственен</Br>
+            <input type="checkbox" name="Opros" id="Opros" value="Nichego"> Ничего из вышеперечисленного мне не подходит</p>
+            </div>
+        <div class="form__group">
+          <label for="Rassilka">Планируете совмещать с учебой?</label><br />
+          <p><input type="radio" name="Rassilka" id="Rassilka" value="Yes"/>Да<br>
+          <input type="radio" name="Rassilka" id="Rassilka" value="No"/>Нет</p>
+        </div>
+
+      <div>
+      <label for="Dolzhnost">На какую зарплату вы претендуете?</label><br/>  
+      <select size="1" name="Dolzhnost" id="Dolzhnost" class="form_select">
+        <option>Меньше 30 т.р</option>
+        <option>Около 30 т.р</option>
+        <option>Больше 30 т.р</option>
+      </select>
+         </div>
+        </div>
+      </div>
+
+      <button type="submit" class="form__submit">
+        Отправить
+      </button>
+    </form>
+  </body>
+</html>
